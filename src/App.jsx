@@ -1,17 +1,15 @@
-import React from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import './App.css'
+import React from "react";
+import { AddTodo } from "./components/AddTodo";
+import { TodoLists } from "./components/TodoList";
 
 const App = () => {
   return (
-    <div className='App'>
-      <h1>Todo</h1>
-     <form>
-      <input type="text" placeholder='add todo' />
-      <button>Add</button>
-     </form>
+    <div className="container p-4 mt-2">
+      <h2>Todo Application</h2>
+      <AddTodo />
+      <TodoLists />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
